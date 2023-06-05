@@ -1,0 +1,28 @@
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Where
+        link(rel="stylesheet", href="style.css")
+    body 
+        include ./header.pug
+        
+        main
+            section#where
+                .container
+                .row
+                .col-lg-12.text-center
+                    h2 Where We Are
+                    hr
+                .row
+                .col-lg-12
+                    p We are located in the heart of the city and are easily accessible by public transportation. Our address is:
+                    address
+                    | Address: #{info.address}
+                    br
+                    | Phone: #{info.phone}
+                    br
+                    | Email: #{info.email}
+
+        include ./footer.pug
